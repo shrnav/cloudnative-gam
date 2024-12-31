@@ -32,6 +32,8 @@ execute "docker compose up" command.
 
 Below urls should work once everything is up.
 
+To down the container use "docker compose down" command.
+
 ===============================================================================
 
 # URL via Direct server code.

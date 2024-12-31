@@ -1,5 +1,5 @@
 # cloudnative-gam-jdk21
-Application on top of GA-SDK
+Application on top of GA-SDK using jdk 21.
 
 # Image names pushed in docker: Just use docker compose file to run.
 
@@ -9,7 +9,7 @@ navneet204/mmv3-gam-gateway:0.0.1-SNAPSHOT
 navneet204/mmv3-gam-naming-server:0.0.1-SNAPSHOT
 ===============================================================================
 
-#How to create Docker Images:
+# How to create Docker Images:
 
 1: Make sure data location and resource location path in application.properties of gam-addressing should be commented.
 
@@ -20,7 +20,13 @@ navneet204/mmv3-gam-naming-server:0.0.1-SNAPSHOT
 
 3: Open the docker desktop and check for the images. 
  
+# How to run Docker images.
 
+Go to the directory, where docker-compose.yaml exist.
+
+execute "docker compose up" command.
+
+Below urls should work once everything is up.
 
 # Direct server code.
 //for GAV

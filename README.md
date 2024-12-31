@@ -4,8 +4,11 @@ Application on top of GA-SDK using jdk 21.
 # Image names pushed in docker: Just use docker compose file to run.
 
 navneet204/mmv3-gam-addressing:0.0.1-SNAPSHOT
+
 navneet204/mmv3-gam-client:0.0.1-SNAPSHOT
+
 navneet204/mmv3-gam-gateway:0.0.1-SNAPSHOT
+
 navneet204/mmv3-gam-naming-server:0.0.1-SNAPSHOT
 
 

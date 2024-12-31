@@ -9,6 +9,12 @@ navneet204/mmv3-gam-gateway:0.0.1-SNAPSHOT
 navneet204/mmv3-gam-naming-server:0.0.1-SNAPSHOT
 ===============================================================================
 
+#How to create Docker Images:
+
+1: Make sure data location and resource location path in application.properties of gam-addressing should be commented.
+2:Using eclipse, execute maven goal spring-boot:build-image -DskipTests to generate the images. 
+ 
+
 
 # Direst server code.
 //for GAV

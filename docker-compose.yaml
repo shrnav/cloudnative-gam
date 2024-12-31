@@ -1,5 +1,4 @@
 services:
-
   
   gam-naming-server:
     image: navneet204/mmv3-gam-naming-server:0.0.1-SNAPSHOT

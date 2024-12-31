@@ -12,7 +12,8 @@ navneet204/mmv3-gam-naming-server:0.0.1-SNAPSHOT
 #How to create Docker Images:
 
 1: Make sure data location and resource location path in application.properties of gam-addressing should be commented.
-2:Using eclipse, execute maven goal spring-boot:build-image -DskipTests to generate the images. 
+2:Using eclipse, execute maven goal spring-boot:build-image -DskipTests to generate the images.
+3: Open the docker desktop and check for the images. 
  
 
 

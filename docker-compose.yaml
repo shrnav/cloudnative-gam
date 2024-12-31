@@ -1,0 +1,61 @@
+services:
+
+  
+  gam-naming-server:
+    image: navneet204/mmv3-gam-naming-server:0.0.1-SNAPSHOT
+    
+    ports:
+      - "8761:8761"
+    networks:
+      - gam-network
+      
+  gam-gateway:
+    image: navneet204/mmv3-gam-gateway:0.0.1-SNAPSHOT
+    
+    ports:
+      - "8766:8766"
+    networks:
+      - gam-network
+    depends_on:
+      - gam-naming-server
+    environment:
+      EUREKA.CLIENT.SERVICEURL.DEFAULTZONE: http://gam-naming-server:8761/eureka      
+      EUREKA.INSTANCE.PREFERIPADDRESS: true
+
+  gam-addressing:
+    image: navneet204/mmv3-gam-addressing:0.0.1-SNAPSHOT
+    volumes:
+      - D:\dev_23.1\platform\dist\dev-combined\target\container\server\ref-data\Global_Address_Validation_Coder\GlobalAddressValidation\GAV_WORLD_SEP2024:/mnt/ggs_data
+      - D:\dev_23.1\platform\dist\dev-combined\target\container\server\ref-data\Global_Address_Validation_Coder\GlobalAddressValidation\GTA_WORLD_JUN2024:/mnt/ggs_gta_data
+      - C:\Users\Navneet.Shrivastava\.m2\repository\com\precisely\addressing\addressing-sdk-runtime\5.1.923\addressing-sdk-runtime-5.1.923:/var/lib/ggs/resources  
+    
+    ports:
+      - "8181:8181"
+    networks:
+      - gam-network
+    depends_on:
+      - gam-naming-server
+    environment:
+      EUREKA.CLIENT.SERVICEURL.DEFAULTZONE: http://gam-naming-server:8761/eureka      
+      EUREKA.INSTANCE.PREFERIPADDRESS: true
+      
+  
+
+  gam-client:
+    image: navneet204/mmv3-gam-client:0.0.1-SNAPSHOT
+    
+    ports:
+      - "8081:8081"
+      
+    networks:
+      - gam-network
+    depends_on:
+      - gam-naming-server
+    environment:
+      EUREKA.CLIENT.SERVICEURL.DEFAULTZONE: http://gam-naming-server:8761/eureka      
+      EUREKA.INSTANCE.PREFERIPADDRESS: true
+      
+  
+  
+networks:
+  gam-network:

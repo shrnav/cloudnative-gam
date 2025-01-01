@@ -101,8 +101,6 @@ http://localhost:8766/gam-client/gta-client-post
 
 
 
-
-
 # To check hardcoded error message working
 
 http://localhost:8766 /GAM-CLIENT/gam-client/usa/2507%20Ne%20Andresen%20%20Rd%20B/Vancouver/oo/999

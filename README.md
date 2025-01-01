@@ -62,6 +62,22 @@ http://localhost:8081/gav-client/country/can/input/55%20abc/city/Toronto/sp/%22%
 http://localhost:8081/gta-client/country/can/input/55%20abc/city/Toronto/sp/%22%22/postCode/M5C%20201K6
 
 
+//For GAV via post
+
+http://localhost:8081/gav-client-post
+
+
+//For GTA via post
+
+http://localhost:8081/gta-client-post
+
+
+Sample json while calling things via post.
+
+{"country": "IND", "input": "909 isai tola khati baba", "city": "Jhansi", "sp": "Uttar Pradesh", "postCode": "284003"}
+
+![image](https://github.com/user-attachments/assets/8b8819f1-2565-4994-af39-0af407abe742)
+
 
 # Using API Gateway
 

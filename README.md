@@ -89,6 +89,16 @@ http://localhost:8766/gam-client/gav-client/country/can/input/55%20abc/city/Toro
 
 http://localhost:8766/gam-client/gta-client/country/can/input/55%20abc/city/Toronto/sp/%22%22/postCode/M5C%20201K6
 
+//for GAV via post
+
+http://localhost:8766/gam-client/gav-client-post
+
+
+//for GTA via post
+
+http://localhost:8766/gam-client/gta-client-post
+
+
 
 
 # To check hardcoded error message working

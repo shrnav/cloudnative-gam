@@ -76,6 +76,7 @@ Sample json while calling things via post.
 
 {"country": "IND", "input": "909 isai tola khati baba", "city": "Jhansi", "sp": "Uttar Pradesh", "postCode": "284003"}
 
+![image](https://github.com/user-attachments/assets/8b8819f1-2565-4994-af39-0af407abe742)
 
 
 # Using API Gateway

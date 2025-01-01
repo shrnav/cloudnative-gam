@@ -12,7 +12,7 @@ navneet204/mmv3-gam-gateway:0.0.1-SNAPSHOT
 navneet204/mmv3-gam-naming-server:0.0.1-SNAPSHOT
 
 
-===============================================================================
+=====================================================================
 
 # How to create Docker Images:
 
@@ -25,7 +25,7 @@ navneet204/mmv3-gam-naming-server:0.0.1-SNAPSHOT
 
 3: Open the docker desktop and check for the images. 
 
-===============================================================================
+=====================================================================
  
 # How to run Docker images.
 
@@ -37,7 +37,7 @@ Below urls should work once everything is up.
 
 To down the container use "docker compose down" command.
 
-===============================================================================
+=====================================================================
 
 # URL via Direct server code.
 

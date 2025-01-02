@@ -1,5 +1,7 @@
 package com.precisely.gam.gamclient;
 
+import java.util.Map;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -13,13 +15,21 @@ import io.github.resilience4j.circuitbreaker.annotation.CircuitBreaker;
 public class GavClientController {
 	@Autowired
 	private GavAddressingProxy proxy;
-
+	
+	
 	@PostMapping("/gav-client-post")
 	public String getGAVPostResponse(@RequestBody Address address) {
 		return proxy.getGAV(address.getCountry(), address.getInput(), address.getCity(), address.getSp(),
 				address.getPostCode());
 	}
 
+
+	@PostMapping("/gtaOptionsPost")
+	public Map<String,String> getGTAOptionsResponse(@RequestBody GTAOptions gtaOptions) {
+		
+		return proxy.getGTAOptions(gtaOptions.toMap());
+	}
+	
 	@PostMapping("/gta-client-post")
 	public String getGTAPostResponse(@RequestBody Address address) {
 		return proxy.getGTA(address.getCountry(), address.getInput(), address.getCity(), address.getSp(),

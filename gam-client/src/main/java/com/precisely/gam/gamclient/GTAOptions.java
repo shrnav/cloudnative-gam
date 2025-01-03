@@ -1,22 +1,10 @@
 package com.precisely.gam.gamclient;
 
-import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 import java.util.Objects;
 
 public class GTAOptions {
-
-	// custom.put("EXPANDED_RANGE_UNIT", "true");
-//	 custom.put("SEARCH_TYPE", "ADDRESS_COMPLETION");
-//	 custom.put("COMPRESSED_AREA_RESULT", "false");
-//	 custom.put("SEARCH_UNIT_INFORMATION", "true");
-//	 custom.put("RETURN_PARSED_INPUT", "true");
-//	 custom.put("FALLBACK_TO_WORLD", "true");
-//	 custom.put("PREFER_POBOX_OVER_STREET", "false");   
-//	 custom.put("KEY_POSTAL_CODE_OVERRIDE", "false");
-//	 custom.put("ADDRESS_CASING",  "LOWER");
 
 	private String expandedRangeUnit;
 	private String searchType;

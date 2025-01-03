@@ -93,13 +93,22 @@ http://localhost:8766/gam-client/gta-client/country/can/input/55%20abc/city/Toro
 
 http://localhost:8766/gam-client/gav-client-post
 
+![image](https://github.com/user-attachments/assets/f3f93039-1c31-4dc8-b137-2e0362367197)
+
 
 //for GTA via post
 
 http://localhost:8766/gam-client/gta-client-post
 
+![image](https://github.com/user-attachments/assets/0572fef7-e220-41e8-9950-1ca35845029e)
 
+# URL to change some basic options of predict or GTA service run-time options via postman using Eureka.
 
+http://localhost:8766/gam-client/gtaOptionsPost
+
+![image](https://github.com/user-attachments/assets/e9acb9e9-75e9-4c6b-9ccf-10429ebfc479)
+
+After changing the options we can use http://localhost:8766/gam-client/gta-client-post using Postman to see the effect in response. Use the data in postman as per the given related screen-shot.
 
 # To check hardcoded error message working
 

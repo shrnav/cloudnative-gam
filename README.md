@@ -102,7 +102,7 @@ http://localhost:8766/gam-client/gta-client-post
 
 ![image](https://github.com/user-attachments/assets/0572fef7-e220-41e8-9950-1ca35845029e)
 
-#URL to change some basic options of predict or GTA service run-time options via postman using Eureka.
+# URL to change some basic options of predict or GTA service run-time options via postman using Eureka.
 
 http://localhost:8766/gam-client/gtaOptionsPost
 
